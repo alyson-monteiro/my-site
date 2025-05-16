@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
+import Logo3D from './Logo3D'
 
 export default function Header() {
   const [open, setOpen] = useState(false)
@@ -13,6 +14,8 @@ export default function Header() {
         {/* Logo / Nome */}
         <Link href="/" className="text-2xl font-bold text-white">
           Alyson Monteiro
+          {/* Logo 3D */}
+          <Logo3D />
         </Link>
 
         {/* Menu desktop */}
