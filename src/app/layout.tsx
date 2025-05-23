@@ -5,6 +5,9 @@ import Header from '../components/Header';
  export const metadata = {
    title: 'Meu Portfólio',
    description: 'Apresentação pessoal e portfólio',
+   icons: {
+    icon: '/favicon.ico',
+  },
  }
 
  export default function RootLayout({
