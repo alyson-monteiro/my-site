@@ -1,9 +1,12 @@
 'use client'
 
+
+import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
-import Logo3D from './Logo3D'
+
+const Logo3D = dynamic(() => import('./Logo3D'), { ssr: false })
 
 export default function Header() {
   const [open, setOpen] = useState(false)
