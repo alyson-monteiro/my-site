@@ -11,7 +11,7 @@ export default function Contact() {
         Me mande um e-mail ou me encontre nas redes sociais:
       </p>
       <div className="flex justify-center space-x-6">
-        <Link href="mailto:seu@email.com" className="text-white hover:text-green-400">
+        <Link href="mailto:alyson_monteiros@hotmail.com" className="text-white hover:text-green-400">
           <Mail size={32} />
         </Link>
         <Link href="https://github.com/alyson-monteiro" target="_blank" className="text-white hover:text-green-400">

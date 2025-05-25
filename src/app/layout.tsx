@@ -1,5 +1,6 @@
 import './globals.css';
 import Header from '../components/Header';
+import SplashScreen from '../components/SplashScreen'
 
  export const metadata = {
    title: 'Meu Portfólio',
@@ -27,11 +28,17 @@ import Header from '../components/Header';
            min-h-screen
          `}
        >
-+        <Header />
+        <Header />
 
          <div className="relative z-10 max-w-3xl mx-auto px-4 py-16">
            {children}
          </div>
+        <SplashScreen>
+          <Header />
+          <div className="relative z-10 max-w-3xl mx-auto px-4 py-16">
+            {children}
+          </div>
+        </SplashScreen>
        </body>
      </html>
    )

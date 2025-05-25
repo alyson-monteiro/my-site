@@ -3,6 +3,43 @@
 @tailwind components;
 @tailwind utilities;
 
+/* animação de entrada do logo */
+@keyframes logo-enter {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(0deg);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.2) rotate(180deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+/* animação de saída do logo */
+@keyframes logo-exit {
+  0% {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0) rotate(360deg);
+  }
+}
+
+/* utilitários para usar no JSX */
+.animate-logo-enter {
+  animation: logo-enter 1s ease-in-out forwards;
+}
+.animate-logo-exit {
+  animation: logo-exit 0.5s ease-in-out forwards;
+}
+
+
 html {
   scroll-behavior: smooth;
 }
