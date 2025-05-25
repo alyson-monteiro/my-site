@@ -17,8 +17,7 @@ export default function Header() {
         {/* Logo / Nome */}
         <Link href="/" className="text-2xl font-bold text-white">
           Alyson Monteiro
-          {/* Logo 3D */}
-          <Logo3D />
+          {/* <Logo3D /> */}
         </Link>
 
         {/* Menu desktop */}

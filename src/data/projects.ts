@@ -11,7 +11,7 @@ export const projects: Project[] = [
     title: 'Task Manager',
     description: 'App full-stack com Next.js, Node.js e Docker para gerenciamento de tarefas.',
     url: 'https://github.com/alyson-monteiro/Task-Manager',
-    image: '/images/task-manager.png',
+    image: '/images/aim-analyzer-copy.png',
   },
   {
     title: 'Aim Analyzer',

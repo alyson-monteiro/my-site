@@ -17,7 +17,7 @@ export default function Contact() {
         <Link href="https://github.com/alyson-monteiro" target="_blank" className="text-white hover:text-green-400">
           <Github size={32} />
         </Link>
-        <Link href="https://linkedin.com/in/seu-perfil" target="_blank" className="text-white hover:text-green-400">
+        <Link href="https://www.linkedin.com/in/alyson-monteiro-712938238/" target="_blank" className="text-white hover:text-green-400">
           <Linkedin size={32} />
         </Link>
         <Link href="https://instagram.com/seu-perfil" target="_blank" className="text-white hover:text-green-400">
