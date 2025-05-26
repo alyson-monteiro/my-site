@@ -1,10 +1,10 @@
 'use client'
 
-
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
+//import Logo3D from './Logo3D'
 
 const Logo3D = dynamic(() => import('./Logo3D'), { ssr: false })
 
@@ -13,24 +13,35 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 w-full bg-black/50 backdrop-blur-md z-20">
-      <div className="max-w-3xl mx-auto px-4 py-4 flex justify-between items-center">
-        {/* Logo / Nome */}
-        <Link href="/" className="text-2xl font-bold text-white">
+      <div className="flex justify-between items-center w-full px-8 py-4">
+        <Link
+          href="/"
+          className="flex items-center gap-2 text-2xl font-bold text-[#239DC9]"
+        >
+          <Logo3D />
           Alyson Monteiro
-          {/* <Logo3D /> */}
         </Link>
 
+
         {/* Menu desktop */}
-        <nav className="hidden md:flex space-x-6 text-white">
-          <Link href="#hero" className="hover:underline">Início</Link>
-          <Link href="#about" className="hover:underline">Sobre</Link>
-          <Link href="#projects" className="hover:underline">Projetos</Link>
-          <Link href="#contact" className="hover:underline">Contato</Link>
+        <nav className="hidden md:flex space-x-6 text-[#239DC9]">
+          <Link href="#hero" className="hover:underline">
+            01. Início
+          </Link>
+          <Link href="#about" className="hover:underline">
+            02. Sobre
+          </Link>
+          <Link href="#projects" className="hover:underline">
+            03. Projetos
+          </Link>
+          <Link href="#contact" className="hover:underline">
+            04. Contato
+          </Link>
         </nav>
 
         {/* Botão mobile */}
         <button
-          className="md:hidden text-white"
+          className="md:hidden text-[#239DC9]"
           onClick={() => setOpen(!open)}
           aria-label="Abrir menu"
         >
@@ -41,14 +52,30 @@ export default function Header() {
       {/* Menu dropdown mobile */}
       {open && (
         <nav className="md:hidden bg-black/70 backdrop-blur-md">
-          <ul className="flex flex-col items-center space-y-4 py-4 text-white">
-            <li><Link href="#hero" onClick={()=>setOpen(false)}>Início</Link></li>
-            <li><Link href="#about" onClick={()=>setOpen(false)}>Sobre</Link></li>
-            <li><Link href="#projects" onClick={()=>setOpen(false)}>Projetos</Link></li>
-            <li><Link href="#contact" onClick={()=>setOpen(false)}>Contato</Link></li>
+          <ul className="flex flex-col items-center space-y-4 py-4 text-[#239DC9]">
+            <li>
+              <Link href="#hero" onClick={() => setOpen(false)}>
+                Início
+              </Link>
+            </li>
+            <li>
+              <Link href="#about" onClick={() => setOpen(false)}>
+                Sobre
+              </Link>
+            </li>
+            <li>
+              <Link href="#projects" onClick={() => setOpen(false)}>
+                Projetos
+              </Link>
+            </li>
+            <li>
+              <Link href="#contact" onClick={() => setOpen(false)}>
+                Contato
+              </Link>
+            </li>
           </ul>
         </nav>
       )}
     </header>
-)
+  )
 }

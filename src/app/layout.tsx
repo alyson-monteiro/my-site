@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import SplashScreen from '../components/SplashScreen'
 
  export const metadata = {
-   title: 'Meu Portfólio',
+   title: 'Alyson Monteiro',
    description: 'Apresentação pessoal e portfólio',
    icons: {
     icon: '/favicon.ico',
@@ -20,7 +20,7 @@ import SplashScreen from '../components/SplashScreen'
        <body
          className={`
            relative
-           bg-[url('/images/background.png')]
+           bg-fixed bg-[url('/images/background.png')]
            bg-cover
            bg-center
            bg-no-repeat
@@ -29,10 +29,6 @@ import SplashScreen from '../components/SplashScreen'
          `}
        >
         <Header />
-
-         <div className="relative z-10 max-w-3xl mx-auto px-4 py-16">
-           {children}
-         </div>
         <SplashScreen>
           <Header />
           <div className="relative z-10 max-w-3xl mx-auto px-4 py-16">

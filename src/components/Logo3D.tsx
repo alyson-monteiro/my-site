@@ -1,33 +1,41 @@
 'use client'
 
-import { Canvas } from '@react-three/fiber'
-import { Text3D, Center, OrbitControls } from '@react-three/drei'
+import { Canvas, useLoader } from '@react-three/fiber'
+import { OrbitControls } from '@react-three/drei'
+import { TextureLoader } from 'three'
+import * as THREE from 'three'
 import { Suspense } from 'react'
+
+function LogoPlane() {
+  const texture = useLoader(TextureLoader, '/images/logoSemBack.png')
+
+  return (
+    <mesh>
+      <planeGeometry args={[3, 3]} /> {/* menor plano */}
+      <meshStandardMaterial
+        map={texture}
+        transparent
+        side={THREE.DoubleSide}
+      />
+    </mesh>
+  )
+}
 
 export default function Logo3D() {
   return (
-    <div className="w-16 h-16"> {/* ajuste o tamanho como desejar */}
-      <Canvas camera={{ position: [0, 0, 5], fov: 50 }}>
-        <ambientLight intensity={0.6} />
-        <directionalLight position={[5, 5, 5]} intensity={1} />
+    <div className="w-8 h-8"> {/* tamanho fixo da logo */}
+      <Canvas camera={{ position: [0, 0, 3], fov: 50 }}>
+        {/* luz ambiente mais forte */}
+        <ambientLight intensity={1} />
+        {/* luz oposta pra iluminar dos dois lados */}
+        <directionalLight position={[-5, -5, -5]} intensity={0.7} />
+        <directionalLight position={[5, 5, 5]} intensity={0.7} />
+
         <Suspense fallback={null}>
-          <Center>
-            <Text3D
-              font="/fonts/helvetiker_regular.typeface.json"
-              size={1}
-              height={0.2}
-              curveSegments={12}
-              bevelEnabled
-              bevelThickness={0.03}
-              bevelSize={0.02}
-            >
-              AM {/* AM */}
-              <meshStandardMaterial color="#64ffda" />
-            </Text3D>
-          </Center>
+          <LogoPlane />
         </Suspense>
-        {/* opcional: controles para girar o logo */}
-        <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={1} />
+
+        <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={2} />
       </Canvas>
     </div>
   )
