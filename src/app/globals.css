@@ -39,7 +39,6 @@
   animation: logo-exit 0.5s ease-in-out forwards;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -68,4 +67,8 @@ html {
 body {
   @apply bg-cover bg-center bg-no-repeat;
   background-image: url('/images/background.png');
+}
+
+body, a, button {
+  cursor: url('/images/cursor-small.png')14 8, auto;
 }
