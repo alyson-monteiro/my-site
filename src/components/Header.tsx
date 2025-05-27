@@ -4,7 +4,6 @@ import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
-//import Logo3D from './Logo3D'
 
 const Logo3D = dynamic(() => import('./Logo3D'), { ssr: false })
 
@@ -12,11 +11,11 @@ export default function Header() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 w-full bg-black/50 backdrop-blur-md z-20">
+    <header className="fixed top-0 w-full bg-transparent z-20">
       <div className="flex justify-between items-center w-full px-8 py-4">
         <Link
           href="/"
-          className="flex items-center gap-2 text-2xl font-bold text-[#239DC9]"
+          className="flex items-center gap-2 text-2xl font-bold text-[#FCA554]"
         >
           <Logo3D />
           Alyson Monteiro
@@ -24,7 +23,7 @@ export default function Header() {
 
 
         {/* Menu desktop */}
-        <nav className="hidden md:flex space-x-6 text-[#239DC9]">
+        <nav className="hidden md:flex space-x-6 text-[#FCA554]">
           <Link href="#hero" className="hover:underline">
             01. Início
           </Link>

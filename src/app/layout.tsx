@@ -20,15 +20,14 @@ import SplashScreen from '../components/SplashScreen'
        <body
          className={`
            relative
-           bg-fixed bg-[url('/images/background.png')]
-           bg-cover
+           bg-fixed bg-[url('/images/background3.png')]
+           bg-contain
            bg-center
            bg-no-repeat
-           text-white
+           text-[#FCA554]
            min-h-screen
          `}
        >
-        <Header />
         <SplashScreen>
           <Header />
           <div className="relative z-10 max-w-3xl mx-auto px-4 py-16">

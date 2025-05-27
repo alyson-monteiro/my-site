@@ -65,8 +65,8 @@ html {
 
 /* src/app/global.css */
 body {
-  @apply bg-cover bg-center bg-no-repeat;
-  background-image: url('/images/background.png');
+  @apply bg-contain bg-center bg-no-repeat;
+  background-image: url('/images/background3.png');
 }
 
 body, a, button {
