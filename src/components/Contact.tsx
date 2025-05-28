@@ -20,7 +20,7 @@ export default function Contact() {
         <Link href="https://www.linkedin.com/in/alyson-monteiro-712938238/" target="_blank" className="text-white hover:text-green-400">
           <Linkedin size={32} />
         </Link>
-        <Link href="https://instagram.com/seu-perfil" target="_blank" className="text-white hover:text-green-400">
+        <Link href="https://www.instagram.com/alyson.waly/" target="_blank" className="text-white hover:text-green-400">
           <Instagram size={32} />
         </Link>
       </div>

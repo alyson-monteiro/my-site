@@ -16,15 +16,15 @@ export default function About() {
             Sobre Mim
           </h2>
           <p className="mb-6 text-lg md:text-xl leading-relaxed text-[#FCA554]">
-            Sou estudante de Ciência da Computação na Uni-Facef, com experiência em
-            desenvolvimento Full-Stack usando Node.js, React e bancos de dados SQL.
-            Tenho paixão por criar soluções elegantes e eficientes, e adoro mergulhar
-            em projetos de Visão Computacional e IA no meu tempo livre.
+            Sou desenvolvedor de software com foco em aplicações fullstack modernas, combinando lógica robusta, boas práticas e um toque de criatividade.  
+            Tenho experiência prévia com suporte técnico e reparo de hardware, 
+            e hoje me especializo no desenvolvimento de sistemas eficientes com tecnologias como Python, SQL, Flutter, React, Node.js e serviços em nuvem.
           </p>
           <p className="text-lg md:text-xl leading-relaxed text-[#FCA554]">
-            Além de programar, gosto de compartilhar conhecimento: mantenho um blog
-            técnico e participo de comunidades de código aberto. Sempre busco
-            aprender novas tecnologias e colaborar em projetos que façam a diferença.
+            Atualmente, mantenho projetos voltados para análise de dados, interfaces intuitivas e automações inteligentes 
+            com ferramentas de análise de desempenho em jogos competitivos e sistemas de gerenciamento pessoal.
+            Sou curioso por natureza, comprometido com aprendizado constante e acredito em escrever código que não só funcione, mas também resolva problemas reais.  
+            Mais que entregar funcionalidades, quero entregar sentido.
           </p>
         </div>
       </div>

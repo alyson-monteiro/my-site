@@ -27,14 +27,17 @@ export default function Header() {
           <Link href="#hero" className="hover:underline">
             01. Início
           </Link>
+          <Link href="#chatbot" className="hover:underline">
+            02. Meu Bot
+          </Link>
           <Link href="#about" className="hover:underline">
-            02. Sobre
+            03. Sobre
           </Link>
           <Link href="#projects" className="hover:underline">
-            03. Projetos
+            04. Projetos
           </Link>
           <Link href="#contact" className="hover:underline">
-            04. Contato
+            05. Contato
           </Link>
         </nav>
 
